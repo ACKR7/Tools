@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.title {
+    color: #5C6AC4;
+}
+.task {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+}
+#adminPanel {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+#chatPanel {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+.chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
