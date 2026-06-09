@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Entry System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login" class="container">
+        <h1>Login</h1>
+        <input type="text" id="userId" placeholder="Enter ID (e.g., 1234)" />
+        <button onclick="login()">Login</button>
+        <p id="loginError" style="color: red;"></p>
+    </div>
+    <div id="dashboard" class="container" style="display: none;">
+        <h1>Dashboard</h1>
+        <h2>Available Tasks</h2>
+        <ul id="taskList"></ul>
+        <div id="adminPanel" style="display: none;">
+            <h2>Admin: Add Member ID</h2>
+            <input type="text" id="newMemberId" placeholder="Enter new member ID" />
+            <button onclick="addMember()">Add Member</button>
+            <p id="addError" style="color: red;"></p>
+        </div>
+        <div id="chatPanel" style="display: none;">
+            <h2>Online Chat</h2>
+            <div id="chatMessages" class="chat-messages"></div>
+            <input type="text" id="chatInput" placeholder="Type a message" />
+            <input type="file" id="fileInput" accept="image/*,text/*,.pdf,.doc,.docx" style="margin: 5px;" />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <button onclick="logout()">Logout</button>
+        <div id="issueForm" style="display: none;">
+            <h2>Report Issue</h2>
+            <textarea id="issueText" placeholder="Describe the issue"></textarea>
+            <button onclick="submitIssue()">Submit and Send Email</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
